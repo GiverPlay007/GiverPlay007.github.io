@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background: linear-gradient(300deg, #ffffff 0%, #ebf0f0 100%);
+  
+  min-height: 100vh;
+  
+  display: flex;
+  text-align: center;
+}
+
+#container{
+  width: min(90%, 112rem);
+  margin: auto;
+}
+
+main h1 {
+  font-size: clamp(4rem, 8vh, 8rem);
+}
+
+@media (min-width: 760px) {
+  #container {
+    padding: 5rem 2rem;
+  }
+
+  main h1 {
+    font-weight: bold;
+    line-height: .88;
+
+    margin: clamp(10%, 9vh, 12%) 0 4rem;
+
+    width: min(300px, 80%);
+  }
+}
